@@ -1,5 +1,4 @@
 export const endpointMap = new WeakMap();
-
 export function trackAPIUsage(endpoint) {
   let usageCount = endpointMap.get(endpoint) || 0;
   usageCount += 1;
